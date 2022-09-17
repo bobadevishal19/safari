@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Booking Form</title>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="smart-forms.css">
+
+
+  </head>
+  <body>
+    <form method="post" action="send.php">
+    <div class="elem-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name1" placeholder="Full name" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+    <div class="elem-group">
+      <label for="email">Your E-mail</label>
+      <input type="email" id="email"  name="email" placeholder="kalpesh1@gmail.com" required>
+    </div>
+    <div class="elem-group">
+      <label for="phone">Your Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="+91 9689453698" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+    </div>
+    <div class="elem-group">
+      <label for="name">ROOM/SAFARI Name</label>
+      <input type="text" id="name" name="room" placeholder="Full name" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+
+    <div class="elem-group inlined">
+      <label for="adult">Adults</label>
+      <input type="number" id="adult" name="adults" name="total_adults" placeholder="2" min="1" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="child">Children</label>
+      <input type="number" id="child" name="children" placeholder="2" min="0" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="checkin-date">Check-in Date</label>
+      <input type="date" id="checkin-date" name="date1" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="checkout-date">Check-out Date</label>
+      <input type="date" id="checkout-date" name="date2" required>
+    </div>
+
+
+    <button type="submit">Submit</button>
+  </form>
+  </body>
+</html>
